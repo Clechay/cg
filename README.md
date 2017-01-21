@@ -22,8 +22,11 @@
 * `a[n] = x;` - (n+1)-ty element wektora = x, działa tak samo jak w tablicy
 * `a.push_back(x);` - dodaj na końcu wektora nowy element o wartości x
 * `a.pop_back();` - usuń ostatni element wektora (wektor będzie miał po tej operacji o jeden element mniej)
+* `a.resize(n)` - niech wektor ma dokładnie n elementów, jeżeli jest za duży, usuń tyle ostatnich elementów żeby zostało dokłądnie n, jeżeli jest zamały dodaj na końcu tyle pustych (zerowych) elementów żeby wszystkich było dokładnie n
 
 ### przykładowy kod
+
+### w tym przykładzie wierzchołki są numerowane od zera!
 
 ```cpp
 #include <iostream>
