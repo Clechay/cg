@@ -13,12 +13,18 @@
 #### dodatkowe
 * `a.front()` - pierwszy element wektora
 * `a.back()` - ostatni element wektora
-* `a.begin()` - interator początku wektora, np dla funkcji sort
-* `a.end()` - interator końca wektora, np dla funkcji sort
-* `a.rbegin()` - cofający się interator początku wektora, np dla funkcji sort
-* `a.rend()` - cofający się interator końca wektora, np dla funkcji sort
+* `a.begin()` - iterator początku wektora, np dla funkcji sort
+* `a.end()` - iterator końca wektora, np dla funkcji sort
+* `a.rbegin()` - cofający się iterator początku wektora, np dla funkcji sort
+* `a.rend()` - cofający się iterator końca wektora, np dla funkcji sort
 
 ### modyfikacja
 * `a[n] = x;` - (n+1)-ty element wektora = x, działa tak samo jak w tablicy
 * `a.push_back(x);` - dodaj na końcu wektora nowy element o wartości x
 * `a.pop_back();` - usuń ostatni element wektora (wektor będzie miał po tej operacji o jeden element mniej)
+
+### przykładowy kod
+####
+```cpp
+
+```
