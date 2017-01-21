@@ -33,7 +33,8 @@ int main()
 {
 	using namespace std;
 	vector < vector < int> > graf;
-	int n; cin >> n; int k; cin >> k;
+	int n; cin >> n; // liczba wiercholkow
+	int k; cin >> k; // liczba krawedzi laczacych wiercholki
 	graf.resize(n);
 	int a,b;
 	// wczytywanie danych o grafie
