@@ -24,7 +24,35 @@
 * `a.pop_back();` - usuń ostatni element wektora (wektor będzie miał po tej operacji o jeden element mniej)
 
 ### przykładowy kod
-####
-```cpp
 
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+int main()
+{
+	using namespace std;
+	vector < vector < int> > graf;
+	int n; cin >> n; int k; cin >> k;
+	graf.resize(n);
+	int a,b;
+	// wczytywanie danych o grafie
+	for (int i = 0; i < n; ++i)
+	{
+		cin >> a >>b;
+		graf[a].push_back(b);
+		graf[b].push_back(a);
+	}
+	//wypisanie grafu
+	for (int i = 0; i < graf.size(); ++i)
+	{
+		cout << i << ": ";
+		for (int j = 0; j < graf[i].size(); ++j)
+		{
+			cout << graf[i][j] << " ";
+		}
+		cout << endl;
+	}
+    return 0;
+}
 ```
